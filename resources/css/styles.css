@@ -7,4 +7,97 @@
 html, body {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 16px;
+  background-color: #e6e9ef;
+}
+
+a {
+  color: #4c4f69;
+  text-decoration: none;
+}
+
+/* Navigation Bar */
+
+header {
+  height: 4rem;
+  background-color: #eff1f5;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+}
+
+nav #desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+nav #desktop #logo {
+  display: flex;
+  font-family: "Roboto Condensed";
+  align-items: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+nav #desktop #logo-icon {
+  height: 3rem;
+}
+
+nav #desktop #logo-two {
+  color: #6c6f85;
+  font-weight: normal;
+}
+
+nav #desktop ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav #desktop ul li {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+nav #desktop ul a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+}
+nav #mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  header {
+    justify-content: center;
+  }
+  
+  nav #desktop {
+    display: none;
+  }
+
+  nav #mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  nav #mobile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav #mobile img {
+    height: 2.4rem;
+  }
+
 }
