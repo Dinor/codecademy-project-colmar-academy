@@ -1,0 +1,10 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+}
