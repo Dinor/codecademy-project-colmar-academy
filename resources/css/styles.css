@@ -1,13 +1,24 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
 }
 
 html, body {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #dce0e8;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1, h2 {
+  color: #4c4f69;
 }
 
 a {
@@ -18,6 +29,10 @@ a {
 main {
   position: relative;
   top: 4rem;
+}
+
+.image-container{
+  overflow: hidden;
 }
 
 /* Navigation Bar */
@@ -49,15 +64,16 @@ nav #desktop #logo {
   display: flex;
   font-family: "Roboto Condensed";
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav #desktop #logo-icon {
   height: 3rem;
 }
 
-nav #desktop #logo-two {
+nav #desktop #logo-tone {
   color: #6c6f85;
   font-weight: normal;
 }
@@ -105,4 +121,42 @@ nav #mobile {
     height: 2.4rem;
   }
 
+}
+
+/* Banner Section */
+
+#banner {
+  width: 100%;
+  display: flex;
+  padding: 2rem 0;
+}
+
+#banner .image-container {
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+#banner .image-container img {
+  width: 100%;
+}
+
+#banner-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+#banner-info button {
+  background-color: #4c4f69;
+  color: #eff1f5;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+#banner-info button:hover {
+  background-color: #5c5f77;
+  cursor: pointer;
 }
