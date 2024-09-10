@@ -7,6 +7,7 @@ html, body {
   font-family: Roboto, Helvetica, sans-serif;
   font-size: 16px;
   background-color: #dce0e8;
+  color: #4c4f69;
 }
 
 h1 {
@@ -14,13 +15,16 @@ h1 {
 }
 
 h2 {
+  font-size: 3rem;
+}
+
+h3 {
   font-size: 2rem;
 }
 
-h1, h2 {
-  color: #4c4f69;
+p {
+  font-size: 1.2rem;
 }
-
 a {
   color: #4c4f69;
   text-decoration: none;
@@ -33,6 +37,14 @@ main {
 
 .image-container{
   overflow: hidden;
+}
+
+.image-container img {
+  width: 100%
+}
+
+.highlight {
+  background-color: #dce0e8;
 }
 
 /* Navigation Bar */
@@ -136,17 +148,13 @@ nav #mobile {
   padding: 0 1.5rem;
 }
 
-#banner .image-container img {
-  width: 100%;
-}
-
 #banner-info {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 80ch;
   justify-content: center;
   gap: 2.5rem;
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 #banner-info button {
@@ -154,9 +162,75 @@ nav #mobile {
   color: #eff1f5;
   font-size: 1.4rem;
   padding: 0.5rem 0;
+  transition: background-color 250ms ease-in-out;
+  width: 90%;
 }
 
 #banner-info button:hover {
   background-color: #5c5f77;
   cursor: pointer;
+}
+
+/* Information Section */
+
+#information {
+  display: flex;
+  background-color: #eff1f5;
+}
+
+#information #showcase {
+  width: 60%;
+  border-right: 2px solid #dce0e8;
+  padding: 0 1.5rem;
+}
+
+#information #showcase .image-container {
+  object-fit: contain;
+  padding: 2rem 0;
+}
+
+#showcase p {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#showcase aside p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#information #article-list {
+  width: 40%;
+  background-color: #eff1f5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 1rem 0.2rem;
+}
+
+#article-list .preview {
+  display: flex;
+  border: 2px solid #dce0e8;
+  border-style: solid none;
+}
+#article-list .preview .image-container {
+  width: 35%;
+  padding: 1rem;
+}
+
+#article-list .image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#article-list .preview .article-info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem 0;
+}
+
+#article-list .article-info a {
+  color: #04a5e5;
 }
