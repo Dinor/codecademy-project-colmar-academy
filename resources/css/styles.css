@@ -10,6 +10,9 @@ html, body {
   color: #4c4f69;
 }
 
+h1, h2, h3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
 h1 {
   font-size: 5rem;
 }
@@ -24,6 +27,7 @@ h3 {
 
 p {
   font-size: 1.3rem;
+  color: #6c6f85
 }
 
 a {
@@ -200,7 +204,7 @@ nav #mobile {
 }
 
 #showcase aside p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -254,13 +258,9 @@ nav #mobile {
   justify-content: center;
 }
 
-#courses-container .image-container img {
-  width: 100%;
-  height: auto;
-}
 #courses-container .card {
   background-color: #eff1f5;
-  width: 32%;
+  width: 30%;
   height: auto;
 }
 
@@ -273,4 +273,90 @@ nav #mobile {
 
 #courses-container .card-text p{
   opacity: .6;
+}
+
+/* Exhibit Section */
+
+#exhibit {
+  background-color: #eff1f5;
+}
+
+#exhibit h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+#exhibit-container { 
+  display: flex; 
+}
+
+#exhibit-showcase {
+  width: 60%;
+  padding: 0 1.5rem;
+}
+
+#exhibit-showcase video {
+  width: 100%;
+  height: auto;
+}
+
+#exhibit-showcase h3 {
+  padding: 1.5rem 0;
+}
+
+#exhibit-showcase p {
+  padding-bottom: 2rem;
+}
+
+#exhibit-list {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+#exhibit-list .preview {
+  display: flex;
+}
+
+#exhibit-list .image-container {
+  padding: 1rem;
+}
+
+#exhibit-list .preview .preview-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#exhibit-list .image-container {
+  width: 35%;
+}
+/* Footer Section */
+
+footer {
+  background-color: #eff1f5;
+  display: flex;
+  justify-content: space-between;
+  top: 4rem;
+  position: relative;
+  padding: 1rem 1.5rem;
+  border-top: 2px solid #dce0e8;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: #6c6f85;
 }
