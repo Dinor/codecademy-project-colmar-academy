@@ -15,7 +15,7 @@ h1, h2, h3 {
   font-family: "Roboto Condensed", sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -169,15 +169,39 @@ nav #mobile {
 #banner-info button {
   background-color: #4c4f69;
   color: #eff1f5;
-  font-size: 1.4rem;
-  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
   transition: background-color 250ms ease-in-out;
-  width: 90%;
+  width: 100%;
 }
 
 #banner-info button:hover {
   background-color: #5c5f77;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1125px) {
+
+  #banner {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  #banner .image-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  #banner-info {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+  #banner-info button {
+    background-color: #5c5f77;
+  }
+  #banner-info button:hover {
+    background-color: #4c4f69;
+  }
 }
 
 /* Information Section */
@@ -242,7 +266,6 @@ nav #mobile {
 #article-list .article-info a {
   color: #04a5e5;
 }
-
 
 /* Courses Section */
 
