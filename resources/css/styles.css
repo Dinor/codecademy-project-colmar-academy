@@ -15,7 +15,7 @@ h1, h2, h3 {
   font-family: "Roboto Condensed", sans-serif;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -23,11 +23,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #6c6f85
 }
 
@@ -160,7 +160,7 @@ nav #mobile {
 #banner-info {
   display: flex;
   flex-direction: column;
-  width: 80ch;
+  width: 65ch;
   justify-content: center;
   gap: 2.5rem;
   padding: 0 1.5rem;
@@ -204,7 +204,7 @@ nav #mobile {
 }
 
 #showcase aside p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 
@@ -243,6 +243,7 @@ nav #mobile {
   color: #04a5e5;
 }
 
+
 /* Courses Section */
 
 #courses h2 {
@@ -272,7 +273,7 @@ nav #mobile {
 }
 
 #courses-container .card-text p{
-  opacity: .6;
+  opacity: .8;
 }
 
 /* Exhibit Section */
