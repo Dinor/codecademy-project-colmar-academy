@@ -271,6 +271,47 @@ nav #mobile {
   color: #04a5e5;
 }
 
+@media only screen and (max-width: 840px){
+
+  .highlight {
+    background-color: transparent;
+  }
+
+  #showcase {
+    display: none;
+  }
+
+  #information #article-list {
+    width: 100%;
+    padding: 0;
+    gap: 2rem;
+    padding: 1rem 1rem 2rem;
+  }
+
+  #article-list .preview {
+    border: none;
+    flex-direction: column;
+  }
+
+  #article-list .preview .image-container:not(.mobile) {
+    display: none;
+  }
+
+  #article-list .preview .image-container.mobile {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  #article-list .preview .article-info {
+    width: 100%;
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+
+
+}
+
 /* Courses Section */
 
 #courses h2 {
