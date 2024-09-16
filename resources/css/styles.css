@@ -251,6 +251,10 @@ nav #mobile {
   padding: 1rem;
 }
 
+#article-list .preview .image-container.mobile {
+  display: none;
+}
+
 #article-list .image-container img {
   width: 100%;
 }
