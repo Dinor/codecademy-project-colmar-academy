@@ -273,10 +273,13 @@ nav #mobile {
 
 @media only screen and (max-width: 840px){
 
-  .highlight {
+  #information .highlight {
     background-color: transparent;
   }
 
+  #information {
+    border-bottom: 2px solid #dce0e8;
+  }
   #showcase {
     display: none;
   }
@@ -308,7 +311,6 @@ nav #mobile {
     padding: 1rem;
     justify-content: flex-start;
   }
-
 
 }
 
@@ -342,6 +344,41 @@ nav #mobile {
 
 #courses-container .card-text p{
   opacity: .8;
+}
+
+@media only screen and (max-width: 820px) {
+  #courses {
+    background-color: #eff1f5;
+    border-bottom: 2px solid #dce0e8;
+  }
+
+  #courses-container {
+    padding: 1rem 1rem 2rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+  }
+
+  #courses-container .card {
+    width: 100%;
+    background-color: #dce0e8;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #courses-container .card-text {
+    display: block;
+  }
+
+  #courses-container .image-container {
+    display: none;
+  }
+
+  #courses-container .card-text p {
+    display: none;
+  }
+
 }
 
 /* Exhibit Section */
@@ -402,6 +439,8 @@ nav #mobile {
 #exhibit-list .image-container {
   width: 35%;
 }
+
+
 /* Footer Section */
 
 footer {
