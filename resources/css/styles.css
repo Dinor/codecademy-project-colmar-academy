@@ -195,10 +195,13 @@ nav #mobile {
   #banner-info {
     width: 100%;
     padding: 2rem 1rem;
+    text-align: center;
   }
+
   #banner-info button {
     background-color: #5c5f77;
   }
+
   #banner-info button:hover {
     background-color: #4c4f69;
   }
@@ -309,7 +312,8 @@ nav #mobile {
   #article-list .preview .article-info {
     width: 100%;
     padding: 1rem;
-    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
 }
