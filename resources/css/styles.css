@@ -312,6 +312,7 @@ nav #mobile {
   width: 40%;
   display: flex;
   flex-direction: column;
+  padding-right: 0.6%;
 }
 
 #exhibit-list .preview {
