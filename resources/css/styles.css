@@ -416,22 +416,22 @@ nav #mobile {
 }
 
 
-#exhibit-information-showcase {
+#exhibit-showcase {
   width: 60%;
   padding: 0 1.5rem;
 }
 
 
-#exhibit-information-showcase video {
+#exhibit-showcase video {
   width: 100%;
   height: auto;
 }
 
-#exhibit-information-showcase h3 {
+#exhibit-showcase h3 {
   padding: 1.5rem 0;
 }
 
-#exhibit-information-showcase p {
+#exhibit-showcase p {
   padding-bottom: 2rem;
 }
 
@@ -469,7 +469,7 @@ nav #mobile {
     display: none;
   }
 
-  #exhibit-information-showcase {
+  #exhibit-showcase {
     padding: 0;
     width: 100%;
     padding-bottom: 1.5rem;
