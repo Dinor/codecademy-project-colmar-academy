@@ -457,6 +457,7 @@ nav #mobile {
   #exhibit-showcase {
     padding: 0;
     width: 100%;
+    padding-bottom: 1.5rem;
   }
 
 }
@@ -487,4 +488,16 @@ footer ul li {
 
 footer ul li a {
   color: #6c6f85;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  footer {
+    border-top: none;
+    padding: 1rem;
+  }
+
+  footer ul {
+    display: none;
+  }
 }
