@@ -49,7 +49,7 @@ main {
 }
 
 .image-container img {
-  width: 100%
+  width: 100%;
 }
 
 .highlight {
@@ -400,10 +400,12 @@ nav #mobile {
   display: flex; 
 }
 
+
 #exhibit-showcase {
   width: 60%;
   padding: 0 1.5rem;
 }
+
 
 #exhibit-showcase video {
   width: 100%;
@@ -419,32 +421,28 @@ nav #mobile {
 }
 
 #exhibit-list {
-  width: 40%;
   display: flex;
   flex-direction: column;
-  padding-right: 0.6%;
+  width: 40%;
 }
 
-#exhibit-list .preview {
+#exhibit-list .list-item {
   display: flex;
-}
+} 
 
-#exhibit-list .image-container {
+#exhibit-list .list-item .image-container {
+  width: 30%;
   padding: 1rem;
 }
 
-#exhibit-list .preview .preview-text {
+#exhibit-list .list-item .list-item-text {
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  gap: .5rem;
+  padding: 1rem 0;
 }
-
-#exhibit-list .image-container {
-  width: 35%;
-}
-
-
 /* Footer Section */
 
 footer {
