@@ -444,6 +444,22 @@ nav #mobile {
   padding: 1rem;
 }
 
+@media only screen and (max-width: 768px){
+  
+  #exhibit h2 {
+    padding-bottom: 1rem;
+  }
+
+  #exhibit h3, #exhibit p, #exhibit-list {
+    display: none;
+  }
+
+  #exhibit-showcase {
+    padding: 0;
+    width: 100%;
+  }
+
+}
 /* Footer Section */
 
 footer {
