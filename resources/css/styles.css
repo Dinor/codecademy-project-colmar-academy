@@ -432,7 +432,7 @@ nav #mobile {
 
 #exhibit-list .list-item .image-container {
   width: 30%;
-  padding: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
 }
 
 #exhibit-list .list-item .list-item-text {
@@ -441,8 +441,9 @@ nav #mobile {
   flex-direction: column;
   justify-content: center;
   gap: .5rem;
-  padding: 1rem 0;
+  padding: 1rem;
 }
+
 /* Footer Section */
 
 footer {
