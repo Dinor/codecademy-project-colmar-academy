@@ -22,6 +22,10 @@ h2 {
   font-size: 3rem;
 }
 
+h2:not(#showcase-heading){
+  border-bottom: 4px solid #4c4f69;
+}
+
 h3 {
   font-size: 1.7rem;
 }
@@ -58,6 +62,7 @@ main {
 .highlight {
   background-color: #dce0e8;
 }
+
 
 /* Navigation Bar */
 
@@ -170,13 +175,14 @@ nav #mobile {
 
 #banner .image-container {
   width: 60%;
+  max-width: 1104px;
   padding: 0 1.5rem;
 }
 
 #banner-info {
   display: flex;
   flex-direction: column;
-  width: 65ch;
+  width: 40%;
   justify-content: center;
   gap: 2.5rem;
   padding: 0 1.5rem;
@@ -198,7 +204,7 @@ nav #mobile {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1125px) {
+@media only screen and (max-width: 1104px) {
 
   #banner {
     flex-direction: column;
@@ -207,6 +213,7 @@ nav #mobile {
   
   #banner .image-container {
     width: 100%;
+    max-width: none;
     padding: 0;
   }
 
@@ -238,7 +245,6 @@ nav #mobile {
 
 #information #information-showcase {
   width: 60%;
-  border-right: 2px solid #dce0e8;
   padding: 0 1.5rem;
 }
 
@@ -260,6 +266,7 @@ nav #mobile {
 #information #information-list {
   width: 40%;
   background-color: #eff1f5;
+  border-left: 2px solid #dce0e8;
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
@@ -274,6 +281,7 @@ nav #mobile {
 #information-list .list-item .image-container {
   width: 35%;
   padding: 1rem 0 1rem 1rem;
+  max-width: 272px;
 }
 
 #information-list .list-item .image-container.mobile {
@@ -330,6 +338,8 @@ nav #mobile {
     display: block;
     width: 100%;
     padding: 0;
+    max-width: 576px;
+    margin: 0 auto;
   }
 
   #information-list .list-item .list-item-text {
@@ -343,9 +353,15 @@ nav #mobile {
 
 /* Courses Section */
 
+#courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #courses h2 {
   text-align: center;
   padding-top: 2rem;
+  width: fit-content;
 }
 
 #courses-container {
@@ -359,8 +375,15 @@ nav #mobile {
 #courses-container .card {
   background-color: #eff1f5;
   width: 30%;
-  border-style: none;
+  max-width: 532px;
+  border: 1px solid transparent;
   border-radius: 12px;
+  transition: opacity 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+#courses-container .card:hover {
+  background-color: #ccd0da;
+  opacity: .8;
 }
 
 #courses-container .card .image-container img {
@@ -373,6 +396,8 @@ nav #mobile {
   padding: 1rem 1rem 1.5rem;
   gap: 0.5rem;
 }
+
+
 
 #courses-container .card-text p{
   opacity: .8;
@@ -397,6 +422,13 @@ nav #mobile {
     background-color: #dce0e8;
     padding: 1rem;
     text-align: center;
+    max-width: none;
+    transition: background-color 250ms ease-in-out;
+  }
+
+  #courses-container .card:hover {
+    opacity: 1;
+    background-color: #acb0be;
   }
 
   #courses-container .card-text {
@@ -417,11 +449,16 @@ nav #mobile {
 
 #exhibit {
   background-color: #eff1f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #exhibit h2 {
   text-align: center;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  width: fit-content;
 }
 
 #exhibit-container { 
@@ -454,10 +491,15 @@ nav #mobile {
   display: flex;
   flex-direction: column;
   width: 40%;
+  border-left: 2px solid #dce0e8;
+  padding: 0 0.5rem;
+  gap: 0.1rem;
 }
 
 #exhibit-list .list-item {
   display: flex;
+  border: 2px solid #dce0e8;
+  border-style: solid none;
 } 
 
 #exhibit-list .list-item .image-container {
@@ -518,6 +560,10 @@ footer ul {
 
 footer ul li {
   list-style-type: none;
+}
+
+footer ul li:hover {
+  border-bottom: 2px solid #6c6f85;
 }
 
 footer ul li a {
